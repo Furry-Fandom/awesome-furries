@@ -4,4 +4,5 @@ require (dirname(__DIR__)) . '/autoload.php';
 
 (new Builder())
     ->loadPreambleFile()
+    ->loadSuffixFile()
     ->build();

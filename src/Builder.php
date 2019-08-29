@@ -20,6 +20,9 @@ class Builder
     /** @var string $preamble */
     protected $preamble = '';
 
+    /** @var string $suffix */
+    protected $suffix = '';
+
     /**
      * Builder constructor.
      * @param string $root
@@ -52,6 +55,21 @@ class Builder
             throw new \Exception('Could not load preamble file');
         }
         $this->preamble = $contents;
+        return $this;
+    }
+
+    /**
+     * @param string $src
+     * @return self
+     * @throws \Exception
+     */
+    public function loadSuffixFile(string $src = 'SUFFIX.md'): self
+    {
+        $contents = file_get_contents($this->root . '/' . $src);
+        if (!is_string($contents)) {
+            throw new \Exception('Could not load preamble file');
+        }
+        $this->suffix = $contents;
         return $this;
     }
 
@@ -101,6 +119,7 @@ class Builder
             }
             $readMe .= PHP_EOL;
         }
+        $readMe .= $this->suffix;
         $written = file_put_contents(
             $this->root . '/' . $outFile,
             $readMe
