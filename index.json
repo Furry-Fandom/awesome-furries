@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "streamers": "## Furry Streamers"
+  },
+  "furries": {
+    "streamers": [
+      {
+        "name": "Kiit Lock",
+        "path": "streamers/0001-kiit-lock.md",
+        "summary": "Furry Twitch.tv streamer and community builder"
+      }
+    ]
+  }
+}

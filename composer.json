@@ -1,0 +1,19 @@
+{
+  "name": "furry-fandom/awesome-furries",
+  "description": "A curated list of furries (members of the furry fandom) that have done great things.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Soatok Dreamseeker",
+      "email": "soatok.dhole@gmail.com",
+      "homepage": "https://soatok.com"
+    }
+  ],
+  "autoload": {
+    "Furry\\Pawesome\\": "src/"
+  },
+  "require": {
+    "php": "^7.3",
+    "ext-json": "*"
+  }
+}
