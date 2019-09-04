@@ -12,7 +12,7 @@ with the following changes:
 
 * **Do** feel free to suggest people who have done meaningful good for
   the community (or for the world).
-  * We want to highlight people who that do good things!
+  * We want to highlight people who do good things!
   * Having agreeable Twitter hot takes (and nothing further) doesn't count.
 * Don't just suggest popular people because they're popular!
 * Posthumuous entries are fine. (Make sure their closest friends
